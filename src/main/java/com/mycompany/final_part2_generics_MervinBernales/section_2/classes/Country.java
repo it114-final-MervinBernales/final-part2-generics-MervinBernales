@@ -21,4 +21,11 @@ public class Country<C extends HasCapital & HasName> {
 		name = _name;
 		Capital = _capital;
 	}
+	public String getName(){
+		return name;
+	}
+	public String getCapitalName() {
+		// TODO Auto-generated method stub
+		return name;
+	}
 }

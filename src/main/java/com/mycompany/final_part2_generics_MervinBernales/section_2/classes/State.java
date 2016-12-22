@@ -21,4 +21,7 @@ public class State<C extends HasCapital & HasName, G extends HasGovernor> {
 		Governor = _governor;
 		
 	}
+	public String getName(){
+		return name;
+	}
 }

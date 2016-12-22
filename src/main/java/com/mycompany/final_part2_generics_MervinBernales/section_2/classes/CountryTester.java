@@ -11,6 +11,11 @@ import com.mycompany.final_part2_generics_MervinBernales.section_2.intefaces.Has
  *
  */
 public class CountryTester {
-	HasCapital<T extends Country> us = new Country<String, C>("United States", "Washington");
-	HasCapital<T extends Country> turkey = new Country<String, C>("Turkey", "Ankara");
+	public static void main(String[] args){
+		Country<Capital> us = new Country<Capital>("USA", new Capital("Washington DC"));
+		System.out.println("us name: " + us.getName() +", capital name: " +us.getCapitalName());
+		Country<Capital> turkey = new Country<Capital>("Turkey", new Capital("Ankara"));
+		System.out.println("turkey name: " + turkey.getName() +", capital name: " +turkey.getCapitalName());
+		
+	}
 }
